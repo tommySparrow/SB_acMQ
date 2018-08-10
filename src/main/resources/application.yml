@@ -1,0 +1,9 @@
+spring:
+  activemq:
+#8161是后台管理系统，61616是给java用的tcp端口
+    broker-url: tcp://192.168.8.35:61616
+    user: admin
+    password: admin
+  jms:
+#为true时是topic模式，为false是queue模式
+    pub-sub-domain: true
