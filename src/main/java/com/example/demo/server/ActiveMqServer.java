@@ -18,4 +18,11 @@ public class ActiveMqServer {
         System.out.println("监听topic=============NO.1");
         System.out.println("打印:"+message);
     }
+
+    @JmsListener(destination = "queue")
+    public void receiveQueue(String message) {
+        System.out.println("监听queue=============监听queue");
+        System.out.println(message);
+
+    }
 }

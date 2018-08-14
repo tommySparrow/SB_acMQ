@@ -6,4 +6,4 @@ spring:
     password: admin
   jms:
 #为true时是topic模式，为false是queue模式
-    pub-sub-domain: true
+    pub-sub-domain: false
